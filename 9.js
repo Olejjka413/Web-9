@@ -20,7 +20,7 @@ function task2() {
 		let arr	= [1, 2, 3, 4, 5];
 		let l = arr.length;
 		for (let i = 0; i < l; i++) {
-			if (arr.length === 1) {
+			if (arr.length == 1) {
 				console.log(arr[0].toString());
 				return;
 			}
@@ -35,6 +35,20 @@ function task2() {
 /// Задание 3 ///
 function task3() {
 	console.log("Задание №3");
+	let word = prompt('Введите какое-нибудь слово:');
+    isPalindrome(word);
+	function isPalindrome(str){
+		
+		let reverse_str = str.split("").reverse().join("");
+		let check;
+		if (str == reverse_str) {
+			check = true;
+			console.log(check, '(слово является палиндромом)');
+		} else {
+			check = false;
+			console.log(check, '(слово не является палиндромом)');
+		}
+}
 }
 /// Задание 4 ///
 function task4() {
