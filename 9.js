@@ -53,4 +53,31 @@ function task3() {
 /// Задание 4 ///
 function task4() {
 	console.log("Задание №4");
+	let multiply = prompt('Введите число, на которое нужно умножить массив');
+	let matr = [[4, 1, 7],[1, 5, 0],[2, 2, 6]];
+    function scalarMultiplication(num, arr){
+		console.log('Исходный массив: ');
+		orig_output = ''
+		for(var i = 0;i < arr.length;i++)
+		{	
+			for(var j= 0;j <arr[i].length;j++){
+				orig_output += (' ' + arr[i][j] + '    ');
+			}
+			orig_output += ('\n');
+		}
+		console.log(orig_output);
+		console.log('Массив, умноженный на ваше число: ');
+		new_output = ''
+		for(var i = 0;i < arr.length;i++)
+		{
+			for(var j= 0;j <arr[i].length;j++)
+			{
+				arr[i][j] *= num;
+				new_output += (' ' + arr[i][j] + '    ');
+			}
+			new_output += ('\n');
+		}
+		console.log(new_output);
+	}
+	scalarMultiplication(multiply, matr)
 }
