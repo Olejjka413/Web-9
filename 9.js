@@ -43,10 +43,10 @@ function task3() {
 		let check;
 		if (str == reverse_str) {
 			check = true;
-			console.log(check, '(слово является палиндромом)');
+			console.log(check, 'слово является палиндромом');
 		} else {
 			check = false;
-			console.log(check, '(слово не является палиндромом)');
+			console.log(check, 'слово не является палиндромом');
 		}
 }
 }
@@ -57,7 +57,7 @@ function task4() {
 	let matr = [[4, 1, 7],[1, 5, 0],[2, 2, 6]];
     function scalarMultiplication(num, arr){
 		console.log('Исходный массив: ');
-		orig_output = ''
+		orig_output = '';
 		for(var i = 0;i < arr.length;i++)
 		{	
 			for(var j= 0;j <arr[i].length;j++){
@@ -67,7 +67,7 @@ function task4() {
 		}
 		console.log(orig_output);
 		console.log('Массив, умноженный на ваше число: ');
-		new_output = ''
+		new_output = '';
 		for(var i = 0;i < arr.length;i++)
 		{
 			for(var j= 0;j <arr[i].length;j++)
@@ -79,5 +79,5 @@ function task4() {
 		}
 		console.log(new_output);
 	}
-	scalarMultiplication(multiply, matr)
+	scalarMultiplication(multiply, matr);
 }
