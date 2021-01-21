@@ -16,6 +16,21 @@ function task1() {
 /// Задание 2 ///
 function task2() {
 	console.log("Задание №2");
+	function cut(){
+		let arr	= [1, 2, 3, 4, 5];
+		let l = arr.length;
+		for (let i = 0; i < l; i++) {
+			if (arr.length === 1) {
+				console.log(arr[0].toString());
+				return;
+			}
+			let output = `${arr[arr.length - 1]}. Осталось: `;
+			arr.pop();
+			output = output + arr;
+			console.log(output);
+		}
+	}
+	cut()
 }
 /// Задание 3 ///
 function task3() {
